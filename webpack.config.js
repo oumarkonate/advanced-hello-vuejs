@@ -5,9 +5,9 @@ Encore
     .setPublicPath('/build')
 
     .addEntry('app', './assets/js/app.js')
-    .addEntry('product', './assets/js/products/product.js')
-    .addEntry('new-product', './assets/js/products/new-product.js')
-    .addEntry('product-list', './assets/js/products/product-list.js')
+    .addEntry('product', './vue/components/product.vue')
+    .addEntry('new-product', './vue/components/new-product.vue')
+    .addEntry('product-list', './vue/components/product-list.vue')
 
     .enableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()

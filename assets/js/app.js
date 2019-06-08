@@ -1,6 +1,7 @@
-require('../css/app.scss');
-require('../css/products/product.scss');
-require('../css/products/product-list.scss');
-require('../css/products/new-product.scss');
+import('../css/app.scss');
 
-require('./products/product');
+import Vue from 'vue';
+import Product from '../../vue/components/product.vue';
+
+new Vue(Product);
+

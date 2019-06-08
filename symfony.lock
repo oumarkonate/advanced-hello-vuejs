@@ -54,6 +54,9 @@
             "src/Migrations/.gitignore"
         ]
     },
+    "doctrine/event-manager": {
+        "version": "v1.0.0"
+    },
     "doctrine/inflector": {
         "version": "v1.2.0"
     },
@@ -68,6 +71,12 @@
     },
     "doctrine/orm": {
         "version": "v2.5.14"
+    },
+    "doctrine/persistence": {
+        "version": "1.1.1"
+    },
+    "doctrine/reflection": {
+        "version": "v1.0.0"
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
@@ -92,6 +101,18 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "sensio/framework-extra-bundle": {
+        "version": "5.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.2",
+            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
+        },
+        "files": [
+            "config/packages/sensio_framework_extra.yaml"
+        ]
     },
     "symfony/asset": {
         "version": "v3.4.27"
@@ -212,6 +233,12 @@
             "config/routes.yaml"
         ]
     },
+    "symfony/service-contracts": {
+        "version": "v1.1.5"
+    },
+    "symfony/stopwatch": {
+        "version": "v3.4.29"
+    },
     "symfony/twig-bridge": {
         "version": "v3.4.27"
     },
@@ -237,6 +264,24 @@
             "version": "3.3",
             "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
         }
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "15d61b2277cedff81e57cad9e66d2f28959e6058"
+        },
+        "files": [
+            "assets/css/app.css",
+            "assets/js/app.js",
+            "config/packages/assets.yaml",
+            "config/packages/prod/webpack_encore.yaml",
+            "config/packages/webpack_encore.yaml",
+            "package.json",
+            "webpack.config.js"
+        ]
     },
     "symfony/yaml": {
         "version": "v3.4.27"

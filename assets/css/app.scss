@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 form {
     margin: 0 auto;
     width: auto;
@@ -38,10 +34,14 @@ textarea {
     height: 5em;
 }
 
-.button {
-    padding-left: 90px;
-}
-
 button {
     margin-left: .5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    padding-left: 90px;
 }

@@ -38,9 +38,7 @@ class ProductController extends Controller
         $em->persist($product);
         $em->flush();
 
-        $products = $em->getRepository(Product::class)->findAll();
-
-        return new JsonResponse($products);
+        return new JsonResponse($product);
     }
 
     /**
@@ -66,6 +64,6 @@ class ProductController extends Controller
         $em->remove($em->getRepository(Product::class)->find($id));
         $em->flush();
 
-        return new JsonResponse($this->getDoctrine()->getManager()->getRepository(Product::class)->findAll());
+        return new JsonResponse("Product (id = $id) supprimé!");
     }
 }
